@@ -1,6 +1,6 @@
 # React Auth0
 
-react single page app that uses auth0 for authentication.  
+react single page app that uses auth0 for authentication (under development).  
 
 
 Initial setup
