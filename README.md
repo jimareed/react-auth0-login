@@ -15,6 +15,8 @@ npm install @auth0/auth0-react
 
 Run
 ```
+export REACT_APP_DOMAIN=-- insert here --
+export REACT_APP_CLIENTID=-- insert here -- 
 npm start
 ```
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
