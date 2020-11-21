@@ -1,4 +1,4 @@
-# React Auth0
+# react-auth0-login
 
 react single page app that uses auth0 for authentication (under development).  
 
