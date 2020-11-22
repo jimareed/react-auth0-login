@@ -1,12 +1,24 @@
 # react-auth0-login
 
-React single page app that uses Auth0 for authentication.  Based on samples from Auth0 as well as the Auth0 blog: https://auth0.com/blog/authentication-in-golang/. 
+React single page app that uses Auth0 for authentication.  Based on samples from Auth0 as well as the Auth0 blog: https://auth0.com/blog/authentication-in-golang/.
+
+<p  align="center">
+    <img src="./images/react-auth0-login.png" alt="React Auth0 Login" width="50%" height="50%"/>
+</p>
+
 
 Config setup
-1. create auth0 account
-2. create app
-3. create API
+1. create an Auth0 account and login
+2. create a Single Page Web Application
 3. set Allowed Callback URLs and Allowed Logout URLs and Allowed Web Origins to http://localhost:3000
+<p  align="center">
+    <img src="./images/app-settings.png" alt="Auth0 Application Settings" width="50%" height="50%"/>
+</p>
+
+4. create an API (the API identifier is the value used for REACT_APP_AUDIENCE environment variable below)
+<p  align="center">
+    <img src="./images/new-api.png" alt="Auth0 API" width="50%" height="50%"/>
+</p>
 
 Initial setup
 ```
