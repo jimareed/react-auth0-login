@@ -23,7 +23,7 @@ function App() {
       </Navbar.Collapse>
     </Navbar>
     <Jumbotron>
-      <p>Simple react app to login to auth0.</p>
+      <p>Simple react app to login to Auth0.</p>
       <LoginButton/>
       <LogoutButton/>
       <Profile/>

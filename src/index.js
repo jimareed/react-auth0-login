@@ -1,19 +1,31 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { Auth0Provider } from "@auth0/auth0-react";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Auth0Provider } from "./react-auth0-spa";
+import history from './history';
 
 const DOMAIN = process.env.REACT_APP_DOMAIN || "" 
 const CLIENTID = process.env.REACT_APP_CLIENTID || "" 
+const AUDIENCE = process.env.REACT_APP_AUDIENCE || "" 
+
+const onRedirectCallback = appState => {
+  history.push(
+    appState && appState.targetUrl
+      ? appState.targetUrl
+      : window.location.pathname
+  );
+};
 
 ReactDOM.render(
   <Auth0Provider
-  domain={DOMAIN}
-  clientId={CLIENTID}
-  redirectUri={window.location.origin}
+    domain={DOMAIN}
+    client_id={CLIENTID}
+    redirect_uri={window.location.origin}
+    audience={AUDIENCE}  
+    onRedirectCallback={onRedirectCallback}
   >
     <App />
   </Auth0Provider>,
