@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import LoginButton from './LoginButton';
 import LogoutButton from './LogoutButton';
+import Profile from './Profile';
 
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
@@ -25,6 +26,7 @@ function App() {
       <p>Simple react app to login to auth0.</p>
       <LoginButton/>
       <LogoutButton/>
+      <Profile/>
     </Jumbotron>
   </Container>
   );

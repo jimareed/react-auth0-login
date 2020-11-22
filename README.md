@@ -10,7 +10,6 @@ Config setup
 Initial setup
 ```
 npm install
-npm install @auth0/auth0-react
 ```
 
 Run
