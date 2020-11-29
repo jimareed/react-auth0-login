@@ -1,0 +1,16 @@
+version: "3.3"
+services:
+  react-auth0-login:
+    image: jimareed/react-auth0-login
+    container_name: react-auth0-login
+    ports:
+      - "3000:3000"
+    networks:
+      - default
+    environment:
+      - REACT_APP_DOMAIN=--insert here--
+      - REACT_APP_CLIENTID=--insert here--
+      - REACT_APP_AUDIENCE=--insert here--
+      
+networks:
+    default:
